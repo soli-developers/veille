@@ -5,8 +5,8 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/css/custom.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
+    <!-- <link rel="stylesheet" href="{{ '/css/custom.css' | relative_url }}"> -->
     <!-- <link rel="stylesheet" href="{{ '/css/custom2.css' | relative_url }}"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
@@ -25,20 +25,20 @@
 </head>
 
 <body>
-    <header>
-        <h1>{{ page.title }}</h1>
-    </header>
-    <main>
-        <ul>
-            <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#chapitre1">Définition</a></li>
-            <li><a href="#chapitre3">Objectif</a></li>
-            <li><a href="#chapitre2">Méthodologie</a></li>
-            <li><a href="#chapitre4">Ressources</a></li>
-            <li><a href="#conclusion">Tâches principales</a></li>
-        </ul>
-        {{ content }} 
-    </main>
+    <div class="book">
+        <div id="menu_rapports">
+            <a id="rapport_global-icon" href="{{site.baseurl}}/" >
+                <i class="fas fa-list"></i>
+            </a>
+        </div>
+       
+        <div class="page">
+            {{ content }}
+        </div>
+    </div>
+    
+
+      
 </body>
 
 </html>
